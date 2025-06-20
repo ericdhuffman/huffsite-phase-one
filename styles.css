@@ -1,0 +1,48 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --huff-orange: hsl(33, 93%, 54%);
+    --huff-grey: hsl(0, 0%, 7%);
+    --huff-white: hsl(40, 25%, 95%);
+
+    --main-bg-color: var(--huff-grey);
+    --main-text-color: var(--huff-white);
+    --main-accent-color: var(--huff-orange);
+
+    --primary-font: Arial, sans-serif;
+    --secondary-font: Verdana, sans-serif;
+    --tertiary-font: 'Courier New', monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--main-accent-color);
+    color: var(--main-bg-color);
+}
+
+main {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+footer {
+    background-color: var(--main-accent-color);
+    color: var(--main-bg-color);
+}
