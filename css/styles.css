@@ -1,0 +1,162 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --huff-orange: #f7951d;
+    --huff-grey: hsl(0, 0%, 7%);
+    --huff-white: hsl(40, 25%, 95%);
+
+    --main-bg-color: var(--huff-grey);
+    --main-text-color: var(--huff-white);
+    --main-accent-color: var(--huff-orange);
+
+    --primary-font: Arial, sans-serif;
+    --secondary-font: Verdana, sans-serif;
+    --tertiary-font: 'Courier New', monospace;
+}
+
+html {
+    font-size: 16px;
+    font-family: var(--primary-font);
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header, footer {
+    background-color: var(--main-accent-color);
+    color: var(--main-bg-color);
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 1.25em;
+}
+
+main {
+    background-color: var(--main-bg-color);
+    color: var(--main-accent-color);
+    flex-grow: 1;
+    padding: 2em;
+}
+
+header {
+    background-color: var(--main-accent-color);
+    color: var(--main-bg-color);
+}
+
+footer {
+    text-align: center;
+}
+
+.navbar-title-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    text-decoration: none;
+    color: var(--main-bg-color);
+}
+
+.navbar-title-link:active {
+    color: var(--main-bg-color);
+}
+
+.navbar-title-logo img {
+    width: 32px;
+    height: 32px;
+}
+
+.navbar-title-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.hero-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+
+.hero-section-primary {
+    margin-bottom: 3rem;
+}
+
+.hero-section-secondary {
+    font-size: 1.25rem;
+}
+
+.hero-secondary-text p {
+    margin-bottom: 1.5rem;
+}
+
+.hero-secondary-contact {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.hero-contact-links {
+    display: flex;
+    align-items: flex-end;
+    gap: .75rem;
+}
+
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+
+.portfolio-pieces {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.portfolio-piece-thumbnail {
+    border: 2px solid var(--main-accent-color);
+    margin-bottom: 1em;
+}
+
+.portfolio-piece-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
