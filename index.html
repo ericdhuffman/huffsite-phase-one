@@ -8,13 +8,31 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
-            <div class="navbar-title">
-                <a class="navbar-title-link" href="/">
-                    <span class="navbar-title-logo"><img src="images/cinema.png" alt="Huff film reel logo"></span>
-                    <span class="navbar-title-name">Huff</span>
+        <header class="top-header">
+            <div class="top-header-title">
+                <a class="header-title-link" href="/">
+                    <span class="header-title-logo"><img src="images/cinema.png" alt="Huff film reel logo"></span>
+                    <span class="header-title-name">Eric Huffman II</span>
                 </a>
             </div>
+            <nav class="top-navbar">
+                <ul class="top-navbar-menu">
+                    <li class="navbar-menu-item"><a href="#">About</a></li>
+                    <li class="navbar-menu-item"><a href="#">Portfolio</a></li>
+                    <li class="navbar-menu-item"><a href="#">Services</a></li>
+                    <li class="navbar-menu-item"><a href="#">Movies</a>
+                        <ul class="top-navbar-submenu">
+                            <li class="navbar-submenu-item"><a href="#">Events</a></li>
+                            <li class="navbar-submenu-item"><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-menu-item"><a href="#">Contact</a></li>
+                </ul>
+                <div class="for-mobile">
+                    <span id="open-menu">&#9776;</span>
+                    <span id="close-menu">&#x2716;</span>
+                </div>
+            </nav>
         </header>
         <main>
             <section class="hero-section" id="home-hero">
@@ -94,5 +112,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

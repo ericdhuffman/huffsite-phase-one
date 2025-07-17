@@ -14,7 +14,7 @@ img, picture, svg, video {
 }
 
 :root {
-    --huff-orange: #f7951d;
+    --huff-orange: hsl(33, 93%, 54%);
     --huff-grey: hsl(0, 0%, 7%);
     --huff-white: hsl(40, 25%, 95%);
 
@@ -47,9 +47,6 @@ html, body {
 header, footer {
     background-color: var(--main-accent-color);
     color: var(--main-bg-color);
-    flex-grow: 0;
-    flex-shrink: 0;
-    padding: 1.25em;
 }
 
 main {
@@ -59,36 +56,53 @@ main {
     padding: 2em;
 }
 
-header {
-    background-color: var(--main-accent-color);
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.header-title-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 0.75rem;
+    text-decoration: none;
+}
+
+.header-title-logo img {
+    height: 40px;
+    min-height: 40px;
+    width: 40px;
+    min-width: 40px;
+}
+
+.header-title-name {
+    font-size: 1.5rem;
+    font-weight: 600;
     color: var(--main-bg-color);
+}
+
+.top-navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.top-navbar-menu {
+    display: none;
+}
+
+#open-menu {
+    font-size: 1.5rem;
+}
+
+#close-menu {
+    display: none;
 }
 
 footer {
     text-align: center;
-}
-
-.navbar-title-link {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 0.75rem;
-    text-decoration: none;
-    color: var(--main-bg-color);
-}
-
-.navbar-title-link:active {
-    color: var(--main-bg-color);
-}
-
-.navbar-title-logo img {
-    width: 32px;
-    height: 32px;
-}
-
-.navbar-title-name {
-    font-size: 1.5rem;
-    font-weight: 600;
 }
 
 .hero-section {
