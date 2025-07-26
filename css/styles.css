@@ -53,7 +53,6 @@ main {
     background-color: var(--main-bg-color);
     color: var(--main-accent-color);
     flex-grow: 1;
-    padding: 2em;
 }
 
 .top-header {
@@ -114,13 +113,11 @@ footer {
 }
 
 .hero-section h1 {
-    font-size: 4rem;
     font-weight: 600;
     margin-bottom: 0.5em;
 }
 
 .hero-section h2 {
-    font-size: 2rem;
     margin-bottom: 0.5em;
 }
 
@@ -129,7 +126,7 @@ footer {
 }
 
 .hero-section-secondary {
-    font-size: 1.25rem;
+    
 }
 
 .hero-secondary-text p {
@@ -154,7 +151,6 @@ footer {
 }
 
 .portfolio-section h2 {
-    font-size: 2rem;
     margin-bottom: 0.5em;
 }
 
@@ -170,7 +166,15 @@ footer {
 }
 
 .portfolio-piece-title {
-    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 0.5em;
 }
+
+/**** MEDIA QUERIES ****/
+@media screen and (min-width:576px) {}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:992px) {}
+
+@media screen and (min-width:1200px) {}
